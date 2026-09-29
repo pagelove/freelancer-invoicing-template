@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 // Point INVOICE_TEST_JSDOM at an installed jsdom package; no runtime dependency.
 const { JSDOM } = require(process.env.INVOICE_TEST_JSDOM || 'jsdom');
-const appRoot = path.resolve(__dirname, '../public/invoicing-demo');
+const appRoot = path.resolve(__dirname, '../site/invoicing-demo');
 const source = fs.readFileSync(path.join(appRoot, 'index.html'), 'utf8');
 const math = fs.readFileSync(path.join(appRoot, 'invoice-math.js'), 'utf8');
 const script = fs.readFileSync(path.join(appRoot, 'app.js'), 'utf8');

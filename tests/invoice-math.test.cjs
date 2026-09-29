@@ -1,6 +1,6 @@
 const assert = require('node:assert/strict');
 const test = require('node:test');
-const m = require('../public/invoicing-demo/invoice-math.js');
+const m = require('../site/invoicing-demo/invoice-math.js');
 test('decimal prices stay in integer cents', () => {
   assert.equal(m.parseMoney('0.29'), 29);
   assert.equal(m.parseMoney('12.5'), 1250);
