@@ -22,7 +22,7 @@ from bs4 import BeautifulSoup
 for extension, mime in ((".woff", "font/woff"), (".woff2", "font/woff2"), (".webp", "image/webp")):
     mimetypes.add_type(mime, extension)
 
-ROOT = Path(__file__).resolve().parent / "public"
+ROOT = Path(__file__).resolve().parent / "site"
 PROJECT = ROOT
 APPS = {"invoicing-demo": ("invoicing-demo", ('invoices',))}
 SHARED_ASSETS = {'SourceSerif4-Variable.woff', 'Manrope-Variable.woff2', 'SpaceGrotesk-Variable.woff2'}
