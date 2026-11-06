@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-06T18:09:32.668Z",
+  "actor": "Codex",
+  "request": "Review all demos for layout misses like a wrapping control label",
+  "plan": "DEMO-LAYOUT-PLAN",
+  "files": [
+    {
+      "file": "site/invoicing-demo/styles.css",
+      "sha256": "f9848e7e30bc45cf7e68e22bca272c9b76bb2a8535f6a984dd8ac518d234587c"
+    },
+    {
+      "file": "site/invoicing-demo/index.html",
+      "sha256": "f67305741122f99d349cd0398941d91ce7f6d88a1d47ff5366d6b57bed122453"
+    }
+  ],
+  "recordsUnchanged": true,
+  "recordHashes": [],
+  "verification": "Hosted320/375/768/1024/1280/1768 layouts; main before pass covered all16 at320/768/1024/1280. 151 existing tests across affected test suites passed; community repository check passed. See parent audit/2026-11-06-demo-layout-review for screenshot and deployment evidence. CSS/layout only; no native privacy/device-hardware claim."
+}

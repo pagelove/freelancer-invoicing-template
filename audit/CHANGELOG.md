@@ -13,3 +13,9 @@ Implemented the scoped invoicing batch from central FINDINGS.md: app-specific ta
 
 ## PRODUCT-READINESS-VERIFIED — 2026-11-06T13:56:25.366Z — Codex
 User request fulfilled within scoped product task pass; see central product-readiness FINDINGS.md. Verification: affected source checks and behavioral suites passed, including all9template period/order/export helpers, CRM/invoice state tests, and garden/circuit/world finder filters; desktop/narrow-screen browser task checks and real CSV download recorded. Source records/write/trust boundaries retained; browser fixtures do not establish hosted privacy/validation or native writes. Affected files are the complete reviewed diff and SHA256 inventory, linked by this commit. Public review deployment and final acceptance tracked centrally; ATS remains local-only as previously directed.
+
+## DEMO-LAYOUT-PLAN — 2026-11-06T18:00:21.954Z — Codex
+User: Check all demos for misses like the Move to album wrap. Plan: Print / PDF wrapped in the narrow detail toolbar; action groups need wrapping at the group boundary. Target site/invoicing-demo/styles.css, site/invoicing-demo/index.html; CSS layout only, preserve chosen design, source records and behavior. Verify actual hosted320/768/1024/1280 layouts and affected existing checks. Parent evidence: audit/2026-11-06-demo-layout-review/.
+
+## DEMO-LAYOUT-RESULT — 2026-11-06T18:09:32.668Z — Codex
+Plan DEMO-LAYOUT-PLAN completed. Short controls remain intact, whole groups reflow, narrow figures/labels have readable space. Files and hashes: audit/layout-review-20261106.json. Hosted layout/screenshots verified; existing affected tests and community source checks pass. Existing records unchanged. No domain or persistence changes. Root review records publisher CRM projection correction, exact receipts and viewport limitations.
