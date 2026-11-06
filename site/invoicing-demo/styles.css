@@ -222,3 +222,7 @@
   .form-grid.three { grid-template-columns:1fr; }
   .form-grid.three > label:first-child { grid-column:auto; }
 }
+
+.quality-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:16px 0}.quality-tools label{display:grid;gap:6px;font:inherit;font-size:14px;flex:1;min-width:140px}.quality-tools select,.quality-tools button{min-height:44px;max-width:100%;font:inherit;font-size:14px;color:inherit;background:transparent;border:1px solid var(--line,#aaa);border-radius:7px;padding:9px 12px}.quality-tools select option{background:white;color:#26313c}.quality-tools :focus-visible{outline:2px solid currentColor;outline-offset:3px}@media(max-width:600px){.quality-tools label{flex-basis:100%}.quality-tools button{flex:1}.quality-tools select{font-size:16px}}
+
+.sample-notice{font-size:13px;padding:12px 24px;border:0;background:transparent}.quality-tools{padding-block:4px}.quality-tools select{border-color:var(--line,#bbc3ce)}

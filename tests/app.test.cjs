@@ -177,3 +177,6 @@ test('saving a new or edited draft focuses and reveals the refreshed invoice aft
   assert.equal(revealed.length, 2, 'an edited invoice must also be revealed after the composer collapses');
   assert.deepEqual(app.writes().map(call => call.method), ['POST', 'PUT']);
 });
+
+test('register sorts by actual amount without mutating money or issuing writes',async t=>{const app=await setup(t),sort=app.q('[aria-label="Order invoices"]');assert.ok(sort);sort.value='amount';sort.dispatchEvent(new app.w.Event('change'));const values=[...app.w.document.querySelectorAll('.row-amount strong')].map(e=>Number(e.textContent.replace(/[^0-9.]/g,'')));assert.deepEqual(values,[...values].sort((a,b)=>b-a));assert.equal(app.writes().length,0);});
+test('new invoices do not inherit the original sample print disclaimer',async t=>{const app=await setup(t);draft(app,'REAL-PRINT-001');app.submit();await settle();assert.equal(app.q('.invoice-paper .sample-print'),null);assert.match(app.q('.invoice-paper').textContent,/REAL-PRINT-001/);});
