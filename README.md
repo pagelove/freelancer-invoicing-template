@@ -61,3 +61,7 @@ The bundled app preserves its established design and data contract. The hosted s
 ## Assets and sample data
 
 Fonts and artwork are bundled locally; see [asset provenance and licenses](ASSETS.md). Records are fictional examples. This is a public sample app: do not enter private household, contact, client, or payment information.
+
+## Document-first development review
+
+Read [the edition2.4 project record](DOCUMENT-FIRST-REVIEW.md) for source authority, operation/recovery contracts, justified runtime exceptions and current acceptance limits. Plans and verification are recorded in audit/CHANGELOG.md. Local tests do not establish live privacy, authorization or physical-device acceptance.
